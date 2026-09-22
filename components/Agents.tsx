@@ -7,37 +7,37 @@ const agentData = {
     title: "FLOW AGENT",
     description:
       "Tracks cross-chain inflows, outflows, and liquidity acceleration across supported networks. Maps capital direction before charts or narrative cycles react.",
-    image: "/assets/flow-agent.png",
+    image: "/assets/flow-agent.svg",
   },
   core: {
     title: "CORE AGENT",
     description:
       "Monitors stablecoin concentration, liquidity depth, and capital density across ecosystems. Tracks reserve aggregation before directional expansion signals emerge.",
-    image: "/assets/core-agent.png",
+    image: "/assets/core-agent.svg",
   },
   vector: {
     title: "VECTOR AGENT",
     description:
       "Measures liquidity momentum, acceleration strength, and persistence across ecosystems. Scores expansion probability before velocity reaches market consensus.",
-    image: "/assets/vector-agent.png",
+    image: "/assets/vector-agent.svg",
   },
   orbit: {
     title: "ORBIT AGENT",
     description:
       "Forecasts where liquidity migrates across blockchain ecosystems next. Maps destination corridors before broader participation and narrative consensus form.",
-    image: "/assets/orbit-agent.png",
+    image: "/assets/orbit-agent.svg",
   },
   veil: {
     title: "VEIL AGENT",
     description:
       "Detects stealth accumulation and coordinated wallet clustering in fragmented patterns. Surfaces obfuscated capital flows before broader market recognition.",
-    image: "/assets/veil-agent.png",
+    image: "/assets/veil-agent.svg",
   },
   rotor: {
     title: "ROTOR AGENT",
     description:
       "Detects rotation across AI, memecoins, gaming, DeFi, and infrastructure sectors. Flags capital shifts before narrative cycles and price action accelerate.",
-    image: "/assets/rotor-agent.png",
+    image: "/assets/rotor-agent.svg",
   },
 } as const;
 

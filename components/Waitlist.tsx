@@ -6,7 +6,7 @@ export default function Waitlist() {
     >
       <div className="absolute inset-0 -z-10">
         <img
-          src="/assets/waitlist-background.png"
+          src="/assets/waitlist-background.svg"
           alt=""
           className="h-full w-full object-cover opacity-60"
         />

@@ -16,7 +16,7 @@ export default function LiveStream() {
 
         <div className="media-zoom media-card relative min-h-[500px] overflow-hidden rounded-[20px] border border-border bg-card shadow-[inset_0_0_60px_rgba(255,255,255,0.015),0_30px_100px_rgba(0,0,0,0.35)] max-[760px]:min-h-[350px]">
           <img
-            src="/assets/liquidity-stream.png"
+            src="/assets/liquidity-stream.svg"
             alt="Live liquidity stream visualization"
             className="h-full min-h-[500px] w-full object-cover max-[760px]:min-h-[350px]"
           />

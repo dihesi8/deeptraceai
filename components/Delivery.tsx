@@ -93,7 +93,7 @@ export default function Delivery() {
 
           <div className="media-zoom media-card min-h-[300px] overflow-hidden rounded-[20px] border border-border bg-card max-[1050px]:col-span-2 max-[760px]:col-span-1">
             <img
-              src="/assets/delivery-layer.png"
+              src="/assets/delivery-layer.svg"
               alt="DEEPTRACE AI delivery layer"
               className="h-full min-h-[300px] w-full object-cover"
             />

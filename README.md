@@ -136,26 +136,32 @@ size and is easy to recolor — open it in any code editor or vector tool
 (Figma, Illustrator) to tweak the gradient or shape. Swap either file out for
 your own artwork later and the navbar/footer will pick it up automatically.
 
-## Adding your images
+## Imagery
 
-You said you'd upload the images yourself — drop them into `public/assets/` using
-these exact filenames (used throughout the components) and they'll appear automatically:
+Every image slot is now filled with hand-built vector illustrations
+(`public/assets/*.svg`) in the site's own palette and network/fragment motif —
+no external image files needed, and they stay crisp at any size:
 
-| Filename                     | Used in                              |
-|-------------------------------|---------------------------------------|
-| `logo.svg`                    | Navbar / footer (currently text-only logo — swap in `Navbar.tsx` / `Footer.tsx` if you'd rather use a mark) |
-| `liquidity-stream.png`        | Live Liquidity Stream section         |
-| `intelligence-engine.png`     | Liquidity Intelligence Engine section |
-| `flow-agent.png`              | Agents — Flow Agent                   |
-| `core-agent.png`              | Agents — Core Agent                   |
-| `vector-agent.png`            | Agents — Vector Agent                 |
-| `orbit-agent.png`             | Agents — Orbit Agent                  |
-| `veil-agent.png`              | Agents — Veil Agent                   |
-| `rotor-agent.png`             | Agents — Rotor Agent                  |
-| `delivery-layer.png`          | Four Delivery Layers section          |
-| `chain-network.png`           | "Built on Robinhood Chain" section    |
-| `deept-token.png`             | $DEEPT Utility section                |
-| `waitlist-background.png`     | Waitlist section background           |
+| File                       | Used in                               | Motif |
+|-----------------------------|----------------------------------------|-------|
+| `liquidity-stream.svg`      | Live Liquidity Stream section          | Flowing parallel liquidity streams |
+| `intelligence-engine.svg`   | Liquidity Intelligence Engine section  | Dense neural/network mesh |
+| `flow-agent.svg`            | Agents — Flow Agent                    | Directional flow lines |
+| `core-agent.svg`            | Agents — Core Agent                    | Concentric core rings |
+| `vector-agent.svg`          | Agents — Vector Agent                  | Radiating momentum vectors |
+| `orbit-agent.svg`           | Agents — Orbit Agent                   | Orbiting ellipses |
+| `veil-agent.svg`            | Agents — Veil Agent                    | Obscured node field |
+| `rotor-agent.svg`           | Agents — Rotor Agent                   | Rotor/pinwheel blades |
+| `delivery-layer.svg`        | Four Delivery Layers section           | Stacked labeled layers |
+| `chain-network.svg`         | "Built on Robinhood Chain" section     | Hub-and-spoke chain clusters |
+| `deept-token.svg`           | $DEEPT Utility section                 | Token badge with orbiting nodes |
+| `waitlist-background.svg`   | Waitlist section background            | Wide ambient particle field |
+
+They're placeholders in the sense that they're generated art, not photography
+or 3D renders — but they're fully finished, on-brand, and safe to ship as-is.
+Swap any of them out later for real photography/renders by dropping in a file
+with the same name (any format — just update the `src` extension in that
+component if it's not `.svg`).
 
 ## Notes
 
