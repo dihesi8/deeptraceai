@@ -1,0 +1,411 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 20px;
+  --radius-small: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg, #030305);
+  color: var(--text, #f5f5f7);
+  overflow-x: hidden;
+}
+
+/* Hide native cursor only on fine-pointer (desktop) devices */
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.35);
+  color: #fff;
+}
+
+/* =========================================================
+   CUSTOM CURSOR
+========================================================= */
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f5f5f7;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease, background 0.2s ease;
+}
+
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(168, 85, 247, 0.55);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease,
+    background 0.25s ease, opacity 0.2s ease;
+}
+
+.cursor-ring.is-hovering {
+  width: 64px;
+  height: 64px;
+  background: rgba(168, 85, 247, 0.08);
+  border-color: rgba(192, 132, 252, 0.9);
+}
+
+/* =========================================================
+   GLOBAL AMBIENT BACKGROUND (matches hero video)
+========================================================= */
+
+.global-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -50;
+  overflow: hidden;
+  background: #030305;
+}
+
+.global-bg video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.16;
+  filter: blur(2px) saturate(1.1);
+}
+
+.global-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+      circle at 50% -10%,
+      rgba(120, 50, 200, 0.16),
+      transparent 45%
+    ),
+    radial-gradient(circle at 85% 30%, rgba(120, 50, 200, 0.1), transparent 40%),
+    linear-gradient(180deg, #030305 0%, rgba(3, 3, 5, 0.75) 20%, #030305 85%);
+}
+
+/* =========================================================
+   HERO BOTTOM ANIMATION
+========================================================= */
+
+.hero-bottom-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 140px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-bottom-wave svg {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  animation: waveMove 16s linear infinite;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  z-index: 3;
+}
+
+.hero-scroll-indicator span {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--text-muted, #686871);
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CARD HOVER ANIMATIONS — each family gets its own treatment
+========================================================= */
+
+/* 1. Process cards — lift + sweeping light border */
+.card-sweep {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease,
+    background 0.4s ease;
+}
+.card-sweep::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    115deg,
+    transparent 20%,
+    rgba(192, 132, 252, 0.7) 50%,
+    transparent 80%
+  );
+  background-size: 250% 250%;
+  background-position: -100% 0;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease, background-position 0.9s ease;
+  pointer-events: none;
+}
+.card-sweep:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-bright, rgba(255, 255, 255, 0.16));
+}
+.card-sweep:hover::before {
+  opacity: 1;
+  background-position: 100% 0;
+}
+
+/* 2. Agent cards — scale + accent top bar slide in */
+.card-slide-accent {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+.card-slide-accent::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent, #a855f7), var(--accent-light, #c084fc));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-slide-accent:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: var(--card-hover, rgba(255, 255, 255, 0.06));
+}
+.card-slide-accent:hover::before {
+  transform: scaleX(1);
+}
+
+/* 3. Delivery cards — 3D tilt + deep shadow */
+.card-tilt {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease,
+    border-color 0.45s ease;
+  transform-style: preserve-3d;
+  perspective: 800px;
+}
+.card-tilt:hover {
+  transform: rotateX(4deg) rotateY(-4deg) translateY(-6px);
+  box-shadow: 0 30px 60px rgba(120, 50, 200, 0.28);
+  border-color: var(--border-bright, rgba(255, 255, 255, 0.16));
+}
+
+/* 4. Utility cards — pulsing ring */
+.card-pulse-ring {
+  position: relative;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+.card-pulse-ring::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(168, 85, 247, 0.7);
+  opacity: 0;
+  transform: scale(1);
+}
+.card-pulse-ring:hover {
+  background: rgba(168, 85, 247, 0.07);
+  color: #fff;
+}
+.card-pulse-ring:hover::after {
+  animation: ringPulse 1.1s ease-out infinite;
+}
+@keyframes ringPulse {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.14);
+  }
+}
+
+/* 5. Number cards (thesis) — underline reveal + number pop */
+.card-underline {
+  position: relative;
+  transition: background 0.3s ease;
+}
+.card-underline span.num {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.35s ease;
+}
+.card-underline h3 {
+  position: relative;
+  display: inline-block;
+}
+.card-underline h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background: var(--accent-light, #c084fc);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-underline:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+.card-underline:hover span.num {
+  transform: scale(1.15);
+  color: #fff;
+}
+.card-underline:hover h3::after {
+  transform: scaleX(1);
+}
+
+/* 6. Feature cards (engine) — left accent bar grows */
+.card-accent-bar {
+  position: relative;
+  padding-left: 22px;
+  transition: padding-left 0.3s ease;
+}
+.card-accent-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent, #a855f7), transparent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-accent-bar:hover {
+  padding-left: 28px;
+}
+.card-accent-bar:hover::before {
+  transform: scaleY(1);
+}
+
+/* 7. Roadmap items — glowing dot pulse */
+.roadmap-dot {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.roadmap-item:hover .roadmap-dot {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 8px rgba(168, 85, 247, 0.14), 0 0 18px rgba(168, 85, 247, 0.6);
+}
+
+/* 8. Tag grid — fill sweep */
+.tag-fill {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+.tag-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0.35), rgba(192, 132, 252, 0.15));
+  transform: translateX(-100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
+}
+.tag-fill:hover {
+  color: #fff;
+  border-color: rgba(192, 132, 252, 0.6);
+}
+.tag-fill:hover::before {
+  transform: translateX(0);
+}
+
+/* Media card image zoom on hover */
+.media-zoom {
+  overflow: hidden;
+}
+.media-zoom img,
+.media-zoom video {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.media-zoom:hover img,
+.media-zoom:hover video {
+  transform: scale(1.05);
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+}
+.reveal.in-view {
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* =========================================================
+   DASHBOARD UTILITIES
+========================================================= */
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.scroll-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-x::-webkit-scrollbar {
+  height: 6px;
+}
+.scroll-x::-webkit-scrollbar-thumb {
+  background: var(--border, rgba(255, 255, 255, 0.09));
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,20 @@
+<svg width="200" height="48" viewBox="0 0 200 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DEEPTRACE AI">
+  <defs>
+    <linearGradient id="mark-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Mark: a fragmented / traced node path -->
+  <g transform="translate(2,4)">
+    <path d="M20 0 L38 20 L20 40 L2 20 Z" stroke="url(#mark-grad)" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M20 0 L20 14 M20 26 L20 40 M2 20 L11 20 M29 20 L38 20" stroke="url(#mark-grad)" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="20" cy="20" r="5" fill="url(#mark-grad)"/>
+    <circle cx="20" cy="20" r="9" stroke="url(#mark-grad)" stroke-width="1.2" opacity="0.5"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="54" y="29" font-family="'Space Grotesk', Arial, sans-serif" font-weight="600" font-size="21" letter-spacing="0.5" fill="#f5f5f7">DEEPTRACE</text>
+  <text x="177" y="29" font-family="'Space Grotesk', Arial, sans-serif" font-weight="600" font-size="21" fill="#c084fc">AI</text>
+</svg>

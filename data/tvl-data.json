@@ -1,0 +1,71 @@
+{
+  "updatedAt": "2026-09-22T03:12:33.426Z",
+  "latest": {
+    "timestamp": "2026-09-22T03:12:33.426Z",
+    "totalTvlUsd": 6788251.2778565,
+    "tokens": [
+      {
+        "id": "aaplx",
+        "label": "Tokenized Apple",
+        "symbol": "AAPLx",
+        "totalSupply": 15561.68300155,
+        "price": 230,
+        "valueUsd": 3579187.0903565
+      },
+      {
+        "id": "tslax",
+        "label": "Tokenized Tesla",
+        "symbol": "TSLAx",
+        "totalSupply": 12836.25675,
+        "price": 250,
+        "valueUsd": 3209064.1875
+      }
+    ]
+  },
+  "snapshots": [
+    {
+      "timestamp": "2026-09-22T00:00:00.000Z",
+      "totalTvlUsd": 0,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 0,
+          "price": 230,
+          "valueUsd": 0
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 0,
+          "price": 250,
+          "valueUsd": 0
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-09-22T03:12:33.426Z",
+      "totalTvlUsd": 6788251.2778565,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 15561.68300155,
+          "price": 230,
+          "valueUsd": 3579187.0903565
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 12836.25675,
+          "price": 250,
+          "valueUsd": 3209064.1875
+        }
+      ]
+    }
+  ]
+}

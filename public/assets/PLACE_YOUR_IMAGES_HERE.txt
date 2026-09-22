@@ -1,0 +1,2 @@
+See the "Adding your images" section of the project README.md for the
+exact filenames expected in this folder (liquidity-stream.png, flow-agent.png, etc).

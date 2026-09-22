@@ -1,0 +1,36 @@
+name: Fetch TVL Snapshot
+
+on:
+  schedule:
+    # Every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm install viem --no-save
+
+      - name: Run TVL fetch script
+        env:
+          RPC_URL: ${{ secrets.RPC_URL }}
+        run: node scripts/getTVL.mjs
+
+      - name: Commit updated snapshot
+        run: |
+          git config user.name "tvl-bot"
+          git config user.email "actions@github.com"
+          git add data/tvl-data.json
+          git diff --quiet --cached || git commit -m "chore: TVL snapshot $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
