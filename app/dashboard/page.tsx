@@ -50,7 +50,7 @@ export default function DashboardPage() {
       />
 
       <footer className="mt-10 border-t border-border pt-6 font-mono text-xs text-text-muted">
-        Data refreshed every 6h via GitHub Actions · Not affiliated with
+       Not affiliated with
         Robinhood Markets, Inc.
       </footer>
     </main>
