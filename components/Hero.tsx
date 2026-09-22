@@ -25,7 +25,7 @@ export default function Hero() {
           <h1 className="font-display text-[clamp(60px,8vw,116px)] font-medium leading-[0.92] tracking-[-0.065em] max-[760px]:text-[clamp(54px,15vw,85px)]">
             Trace The
             <br />
-            Hided Fragment<span className="text-accent-light">_</span>
+            Hidden Fragment<span className="text-accent-light">_</span>
           </h1>
 
           <p className="mt-[30px] mb-[38px] text-[18px] text-text-soft max-[760px]:text-[15px]">
