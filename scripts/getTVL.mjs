@@ -52,6 +52,30 @@ const STOCK_TOKENS = [
     decimals: 18,
     priceRef: "tesla-inc",
   },
+  {
+    id: "nvdax",
+    label: "Tokenized Nvidia",
+    symbol: "NVDAx",
+    address: "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+    decimals: 18,
+    priceRef: "nvidia-corp",
+  },
+  {
+    id: "msftx",
+    label: "Tokenized Microsoft",
+    symbol: "MSFTx",
+    address: "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+    decimals: 18,
+    priceRef: "microsoft-corp",
+  },
+  {
+    id: "amznx",
+    label: "Tokenized Amazon",
+    symbol: "AMZNx",
+    address: "0x12f190a9F9d7D37a250758b26824B97CE941bF54",
+    decimals: 18,
+    priceRef: "amazon-com",
+  },
 ];
 
 async function getTotalSupply(tokenAddress, decimals) {
@@ -75,6 +99,9 @@ async function getPrice(priceRef) {
   const FALLBACK_PRICES = {
     "apple-inc": 230,
     "tesla-inc": 250,
+    "nvidia-corp": 130,
+    "microsoft-corp": 430,
+    "amazon-com": 185,
   };
   // TODO: replace with a real fetch, e.g.:
   // const res = await fetch(`https://api.geckoterminal.com/api/v2/simple/networks/eth/token_price/${addr}`);

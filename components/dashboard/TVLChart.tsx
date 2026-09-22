@@ -15,7 +15,7 @@ export default function TVLChart({ snapshots }: { snapshots: Snapshot[] }) {
 
   return (
     <div className="rounded-xl border border-border bg-card p-5">
-      <div className="mb-4 text-xs tracking-wide text-text-muted">TOTAL TVL — HISTORY</div>
+      <div className="mb-4 text-xs tracking-wide text-text-muted">TOTAL SUPPLY VALUE — HISTORY</div>
       <div style={{ width: "100%", height: 260 }}>
         <ResponsiveContainer>
           <LineChart data={data} margin={{ top: 4, right: 8, bottom: 0, left: 0 }}>

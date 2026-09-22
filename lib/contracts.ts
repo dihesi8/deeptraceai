@@ -46,6 +46,30 @@ export const STOCK_TOKENS: StockTokenConfig[] = [
     decimals: 18,
     priceRef: "tesla-inc",
   },
+  {
+    id: "nvdax",
+    symbol: "NVDAx",
+    label: "Tokenized Nvidia",
+    address: "0xd0601CE157Db5bdC3162BbaC2a2C8aF5320D9EEC",
+    decimals: 18,
+    priceRef: "nvidia-corp",
+  },
+  {
+    id: "msftx",
+    symbol: "MSFTx",
+    label: "Tokenized Microsoft",
+    address: "0x5621737f42dae558b81269fcb9e9e70c19aa6b35",
+    decimals: 18,
+    priceRef: "microsoft-corp",
+  },
+  {
+    id: "amznx",
+    symbol: "AMZNx",
+    label: "Tokenized Amazon",
+    address: "0x12f190a9F9d7D37a250758b26824B97CE941bF54",
+    decimals: 18,
+    priceRef: "amazon-com",
+  },
 ];
 
 // Robinhood Chain network config (from public docs — verify chain ID/RPC

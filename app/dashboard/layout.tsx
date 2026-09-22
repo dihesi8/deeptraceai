@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Liquidity Dashboard",
   description:
-    "Live token supply value and liquidity depth tracking across Robinhood Chain's tokenized asset ecosystem, powered by DEEPTRACE AI.",
+    "Live tokenized-stock supply value and market cap tracking across Robinhood Chain, powered by DEEPTRACE AI.",
 };
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
