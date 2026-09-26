@@ -735,19 +735,65 @@
           "valueUsd": 2763045.77175
         }
       ]
+    },
+    {
+      "timestamp": "2026-09-26T03:56:07.155Z",
+      "totalTvlUsd": 21487237.8775662,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 15731.36794629,
+          "price": 230,
+          "valueUsd": 3618214.6276467
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 13391.23916,
+          "price": 250,
+          "valueUsd": 3347809.7899999996
+        },
+        {
+          "id": "nvdax",
+          "label": "Tokenized Nvidia",
+          "symbol": "NVDAx",
+          "totalSupply": 90447.44375515,
+          "price": 130,
+          "valueUsd": 11758167.6881695
+        },
+        {
+          "id": "msftx",
+          "label": "Tokenized Microsoft",
+          "symbol": "MSFTx",
+          "totalSupply": 0,
+          "price": 430,
+          "valueUsd": 0
+        },
+        {
+          "id": "amznx",
+          "label": "Tokenized Amazon",
+          "symbol": "AMZNx",
+          "totalSupply": 14935.38255,
+          "price": 185,
+          "valueUsd": 2763045.77175
+        }
+      ]
     }
   ],
   "latest": {
-    "timestamp": "2026-09-25T21:11:49.804Z",
-    "totalTvlUsd": 21497712.433418997,
+    "timestamp": "2026-09-26T03:56:07.155Z",
+    "totalTvlUsd": 21487237.8775662,
     "tokens": [
       {
         "id": "aaplx",
         "label": "Tokenized Apple",
         "symbol": "AAPLx",
-        "totalSupply": 15731.54469624,
+        "totalSupply": 15731.36794629,
         "price": 230,
-        "valueUsd": 3618255.2801352
+        "valueUsd": 3618214.6276467
       },
       {
         "id": "tslax",
@@ -761,9 +807,9 @@
         "id": "nvdax",
         "label": "Tokenized Nvidia",
         "symbol": "NVDAx",
-        "totalSupply": 90527.70455026,
+        "totalSupply": 90447.44375515,
         "price": 130,
-        "valueUsd": 11768601.591533799
+        "valueUsd": 11758167.6881695
       },
       {
         "id": "msftx",
@@ -783,5 +829,5 @@
       }
     ]
   },
-  "updatedAt": "2026-09-25T21:11:49.804Z"
+  "updatedAt": "2026-09-26T03:56:07.155Z"
 }
