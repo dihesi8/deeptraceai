@@ -2575,11 +2575,57 @@
           "valueUsd": 2598145.5574
         }
       ]
+    },
+    {
+      "timestamp": "2026-10-08T04:55:39.661Z",
+      "totalTvlUsd": 18615749.9805566,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 14162.63863264,
+          "price": 230,
+          "valueUsd": 3257406.8855072004
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 12133.14295,
+          "price": 250,
+          "valueUsd": 3033285.7375
+        },
+        {
+          "id": "nvdax",
+          "label": "Tokenized Nvidia",
+          "symbol": "NVDAx",
+          "totalSupply": 74853.83944038,
+          "price": 130,
+          "valueUsd": 9730999.127249401
+        },
+        {
+          "id": "msftx",
+          "label": "Tokenized Microsoft",
+          "symbol": "MSFTx",
+          "totalSupply": 0,
+          "price": 430,
+          "valueUsd": 0
+        },
+        {
+          "id": "amznx",
+          "label": "Tokenized Amazon",
+          "symbol": "AMZNx",
+          "totalSupply": 14021.93638,
+          "price": 185,
+          "valueUsd": 2594058.2303
+        }
+      ]
     }
   ],
   "latest": {
-    "timestamp": "2026-10-07T22:50:12.523Z",
-    "totalTvlUsd": 18495567.0425922,
+    "timestamp": "2026-10-08T04:55:39.661Z",
+    "totalTvlUsd": 18615749.9805566,
     "tokens": [
       {
         "id": "aaplx",
@@ -2601,9 +2647,9 @@
         "id": "nvdax",
         "label": "Tokenized Nvidia",
         "symbol": "NVDAx",
-        "totalSupply": 73897.9143245,
+        "totalSupply": 74853.83944038,
         "price": 130,
-        "valueUsd": 9606728.862185
+        "valueUsd": 9730999.127249401
       },
       {
         "id": "msftx",
@@ -2617,11 +2663,11 @@
         "id": "amznx",
         "label": "Tokenized Amazon",
         "symbol": "AMZNx",
-        "totalSupply": 14044.03004,
+        "totalSupply": 14021.93638,
         "price": 185,
-        "valueUsd": 2598145.5574
+        "valueUsd": 2594058.2303
       }
     ]
   },
-  "updatedAt": "2026-10-07T22:50:12.523Z"
+  "updatedAt": "2026-10-08T04:55:39.661Z"
 }
