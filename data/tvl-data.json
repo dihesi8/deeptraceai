@@ -2713,11 +2713,57 @@
           "valueUsd": 2611355.8006
         }
       ]
+    },
+    {
+      "timestamp": "2026-10-09T04:58:39.971Z",
+      "totalTvlUsd": 18470094.511311702,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 12656.31055491,
+          "price": 230,
+          "valueUsd": 2910951.4276293
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 12127.49776,
+          "price": 250,
+          "valueUsd": 3031874.44
+        },
+        {
+          "id": "nvdax",
+          "label": "Tokenized Nvidia",
+          "symbol": "NVDAx",
+          "totalSupply": 76409.45660948,
+          "price": 130,
+          "valueUsd": 9933229.3592324
+        },
+        {
+          "id": "msftx",
+          "label": "Tokenized Microsoft",
+          "symbol": "MSFTx",
+          "totalSupply": 0,
+          "price": 430,
+          "valueUsd": 0
+        },
+        {
+          "id": "amznx",
+          "label": "Tokenized Amazon",
+          "symbol": "AMZNx",
+          "totalSupply": 14021.83397,
+          "price": 185,
+          "valueUsd": 2594039.28445
+        }
+      ]
     }
   ],
   "latest": {
-    "timestamp": "2026-10-08T23:02:06.985Z",
-    "totalTvlUsd": 18669757.1632829,
+    "timestamp": "2026-10-09T04:58:39.971Z",
+    "totalTvlUsd": 18470094.511311702,
     "tokens": [
       {
         "id": "aaplx",
@@ -2739,9 +2785,9 @@
         "id": "nvdax",
         "label": "Tokenized Nvidia",
         "symbol": "NVDAx",
-        "totalSupply": 77812.11919272,
+        "totalSupply": 76409.45660948,
         "price": 130,
-        "valueUsd": 10115575.4950536
+        "valueUsd": 9933229.3592324
       },
       {
         "id": "msftx",
@@ -2755,11 +2801,11 @@
         "id": "amznx",
         "label": "Tokenized Amazon",
         "symbol": "AMZNx",
-        "totalSupply": 14115.43676,
+        "totalSupply": 14021.83397,
         "price": 185,
-        "valueUsd": 2611355.8006
+        "valueUsd": 2594039.28445
       }
     ]
   },
-  "updatedAt": "2026-10-08T23:02:06.985Z"
+  "updatedAt": "2026-10-09T04:58:39.971Z"
 }
