@@ -4461,27 +4461,73 @@
           "valueUsd": 2070127.33935
         }
       ]
+    },
+    {
+      "timestamp": "2026-10-20T11:02:15.425Z",
+      "totalTvlUsd": 19139281.5966764,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 11499.61948459,
+          "price": 230,
+          "valueUsd": 2644912.4814557
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 12854.15997,
+          "price": 250,
+          "valueUsd": 3213539.9925
+        },
+        {
+          "id": "nvdax",
+          "label": "Tokenized Nvidia",
+          "symbol": "NVDAx",
+          "totalSupply": 86236.16756439,
+          "price": 130,
+          "valueUsd": 11210701.7833707
+        },
+        {
+          "id": "msftx",
+          "label": "Tokenized Microsoft",
+          "symbol": "MSFTx",
+          "totalSupply": 0,
+          "price": 430,
+          "valueUsd": 0
+        },
+        {
+          "id": "amznx",
+          "label": "Tokenized Amazon",
+          "symbol": "AMZNx",
+          "totalSupply": 11189.87751,
+          "price": 185,
+          "valueUsd": 2070127.33935
+        }
+      ]
     }
   ],
   "latest": {
-    "timestamp": "2026-10-20T03:47:56.218Z",
-    "totalTvlUsd": 19103300.1890229,
+    "timestamp": "2026-10-20T11:02:15.425Z",
+    "totalTvlUsd": 19139281.5966764,
     "tokens": [
       {
         "id": "aaplx",
         "label": "Tokenized Apple",
         "symbol": "AAPLx",
-        "totalSupply": 11340.99429914,
+        "totalSupply": 11499.61948459,
         "price": 230,
-        "valueUsd": 2608428.6888022
+        "valueUsd": 2644912.4814557
       },
       {
         "id": "tslax",
         "label": "Tokenized Tesla",
         "symbol": "TSLAx",
-        "totalSupply": 12856.16951,
+        "totalSupply": 12854.15997,
         "price": 250,
-        "valueUsd": 3214042.3775
+        "valueUsd": 3213539.9925
       },
       {
         "id": "nvdax",
@@ -4509,5 +4555,5 @@
       }
     ]
   },
-  "updatedAt": "2026-10-20T03:47:56.218Z"
+  "updatedAt": "2026-10-20T11:02:15.425Z"
 }
