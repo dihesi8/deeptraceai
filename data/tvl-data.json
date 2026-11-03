@@ -6669,35 +6669,81 @@
           "valueUsd": 2395115.7071499997
         }
       ]
+    },
+    {
+      "timestamp": "2026-11-03T00:39:02.406Z",
+      "totalTvlUsd": 19321163.537771598,
+      "tokens": [
+        {
+          "id": "aaplx",
+          "label": "Tokenized Apple",
+          "symbol": "AAPLx",
+          "totalSupply": 13175.69537107,
+          "price": 230,
+          "valueUsd": 3030409.9353461
+        },
+        {
+          "id": "tslax",
+          "label": "Tokenized Tesla",
+          "symbol": "TSLAx",
+          "totalSupply": 10491.91714,
+          "price": 250,
+          "valueUsd": 2622979.2849999997
+        },
+        {
+          "id": "nvdax",
+          "label": "Tokenized Nvidia",
+          "symbol": "NVDAx",
+          "totalSupply": 87699.08436135,
+          "price": 130,
+          "valueUsd": 11400880.9669755
+        },
+        {
+          "id": "msftx",
+          "label": "Tokenized Microsoft",
+          "symbol": "MSFTx",
+          "totalSupply": 0,
+          "price": 430,
+          "valueUsd": 0
+        },
+        {
+          "id": "amznx",
+          "label": "Tokenized Amazon",
+          "symbol": "AMZNx",
+          "totalSupply": 12253.47757,
+          "price": 185,
+          "valueUsd": 2266893.35045
+        }
+      ]
     }
   ],
   "latest": {
-    "timestamp": "2026-11-02T14:57:03.789Z",
-    "totalTvlUsd": 19334178.965481102,
+    "timestamp": "2026-11-03T00:39:02.406Z",
+    "totalTvlUsd": 19321163.537771598,
     "tokens": [
       {
         "id": "aaplx",
         "label": "Tokenized Apple",
         "symbol": "AAPLx",
-        "totalSupply": 11404.90950776,
+        "totalSupply": 13175.69537107,
         "price": 230,
-        "valueUsd": 2623129.1867847997
+        "valueUsd": 3030409.9353461
       },
       {
         "id": "tslax",
         "label": "Tokenized Tesla",
         "symbol": "TSLAx",
-        "totalSupply": 11021.92124,
+        "totalSupply": 10491.91714,
         "price": 250,
-        "valueUsd": 2755480.31
+        "valueUsd": 2622979.2849999997
       },
       {
         "id": "nvdax",
         "label": "Tokenized Nvidia",
         "symbol": "NVDAx",
-        "totalSupply": 88926.56739651,
+        "totalSupply": 87699.08436135,
         "price": 130,
-        "valueUsd": 11560453.7615463
+        "valueUsd": 11400880.9669755
       },
       {
         "id": "msftx",
@@ -6711,11 +6757,11 @@
         "id": "amznx",
         "label": "Tokenized Amazon",
         "symbol": "AMZNx",
-        "totalSupply": 12946.57139,
+        "totalSupply": 12253.47757,
         "price": 185,
-        "valueUsd": 2395115.7071499997
+        "valueUsd": 2266893.35045
       }
     ]
   },
-  "updatedAt": "2026-11-02T14:57:03.789Z"
+  "updatedAt": "2026-11-03T00:39:02.406Z"
 }
